@@ -1,2 +1,2 @@
-# SmrufTranslation
- English to Smruf Translation using funtranslation api
+# DothrakiTranslation
+ English to Dothraki Translation using funtranslation api

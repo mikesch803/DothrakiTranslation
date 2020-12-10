@@ -6,6 +6,10 @@ var outputText = document.querySelector('#output-txt');
 var server ="https://api.funtranslations.com/translate/dothraki.json";
 
 //errorhandler
+function errorHandler() {
+    console.log('error occured',error)
+    alert('Server is down. Please try after some time. ')
+}
 
 //translatedurl
 function dothrakiURL(text)
@@ -22,7 +26,8 @@ function clickeventHandler()
             var translatedTxt = json.contents.translated
             outputText.innerText = translatedTxt
         })
-    
+        .catch(errorHandler)
+
 };
 
 translateBtn.addEventListener("click", clickeventHandler);
